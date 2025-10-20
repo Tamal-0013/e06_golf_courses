@@ -21,7 +21,7 @@ function App() {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    fetch('/golf_courses.json')
+    fetch('./golf_courses.json')
     .then(response => response.json())
     .then(data => {
       setCourses(data.courses)
